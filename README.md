@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karpet Lantai Premium - Mulai Rp 150.000</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #5d4037;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header-content p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .highlight {
+            color: #ffd54f;
+            font-weight: bold;
+        }
+        
+        /* Main Content Styles */
+        .benefits {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        
+        .benefit-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 25px;
+            width: 30%;
+            min-width: 300px;
+            margin-bottom: 20px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .benefit-card h3 {
+            color: #5d4037;
+            margin-bottom: 15px;
+        }
+        
+        /* Promo Section */
+        .promo-section {
+            background-color: #8d6e63;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .promo-badge {
+            background-color: #d32f2f;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        /* Testimonial */
+        .testimonial {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 40px auto;
+            max-width: 800px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .testimonial:before {
+            content: '"';
+            font-size: 5rem;
+            color: #e0e0e0;
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            line-height: 1;
+        }
+        
+        .testimonial-content {
+            padding-left: 40px;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #5d4037;
+            margin-top: 15px;
+            text-align: right;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: #388e3c;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #2e7d32;
+        }
+        
+        /* FAQ Section */
+        .faq-section {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px 0;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        
+        .faq-question {
+            font-weight: bold;
+            color: #5d4037;
+        }
+        
+        /* Product Grid */
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 40px 0;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            width: 30%;
+            min-width: 300px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .product-price {
+            color: #d32f2f;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin: 10px 0;
+        }
+        
+        .product-code {
+            color: #757575;
+            font-size: 0.9rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #5d4037;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .benefit-card, .product-card {
+                width: 100%;
+            }
+            
+            .header-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Karpet Lantai Premium <span class="highlight">Mulai Rp 150.000</span> Saja!</h1>
+                <p>Bikin Rumah Makin Nyaman & Stylish dengan Karpet Berkualitas!</p>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="benefits">
+            <div class="benefit-card">
+                <h3>Harga Terjangkau</h3>
+                <p>Mulai <strong>Rp 150.000</strong> sampai <strong>Rp 230.000</strong> (tergantung ukuran)</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Bahan Nyaman</h3>
+                <p>Lembut di kaki, anti-slip, dan aman untuk anak dan lansia</p>
+            </div>
+            <div class="benefit-card">
+                <h3>Desain Kekinian</h3>
+                <p>Cocok untuk ruang tamu, kamar, atau kantor</p>
+            </div>
+        </section>
+        
+        <section class="promo-section">
+            <div class="promo-badge">PROMO SPESIAL!</div>
+            <h2>🔥 Gratis Ongkir (Min. Pembelian Rp 300.000)</h2>
+            <h2>🔥 Garansi 6 Bulan - Pasti Awet!</h2>
+        </section>
+        
+        <section class="testimonial">
+            <div class="testimonial-content">
+                <p>Awalnya ragu karena harganya murah, ternyata kualitasnya premium! Anak-anak suka banget.</p>
+                <div class="testimonial-author">- Ibu Sarah, Bandung</div>
+            </div>
+        </section>
+        
+        <section class="product-grid">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Karpet+Size+S" alt="Karpet Size S" class="product-image">
+                <div class="product-code">KRP-01 (Size S)</div>
+                <div class="product-price">Rp 150.000</div>
+                <a href="#order" class="cta-button">Pesan Sekarang</a>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Karpet+Size+M" alt="Karpet Size M" class="product-image">
+                <div class="product-code">KRP-02 (Size M)</div>
+                <div class="product-price">Rp 190.000</div>
+                <a href="#order" class="cta-button">Pesan Sekarang</a>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300x200?text=Karpet+Size+L" alt="Karpet Size L" class="product-image">
+                <div class="product-code">KRP-03 (Size L)</div>
+                <div class="product-price">Rp 230.000</div>
+                <a href="#order" class="cta-button">Pesan Sekarang</a>
+            </div>
+        </section>
+        
+        <section class="cta-section" id="order">
+            <h2>BELI SEKARANG SEBELUM KEHABISAN!</h2>
+            <p>📱 <strong>WhatsApp</strong>: <a href="https://wa.me/6285871057231" style="color: #388e3c;">Klik di sini</a></p>
+            <p>🛒 <strong>Shopee/Tokopedia</strong>: Cari "@NamaTokoKarpetAnda"</p>
+            <a href="https://wa.me/6281234567890" class="cta-button">PESAN VIA WHATSAPP</a>
+        </section>
+        
+        <section class="faq-section">
+            <h2>❓ PERTANYAAN UMUM</h2>
+            <div class="faq-item">
+                <div class="faq-question">Q: Bisa COD?</div>
+                <p>A: Bisa! Untuk area Jakarta & sekitarnya.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: Ready stock?</div>
+                <p>A: Ya! Langsung dikirim hari ini juga.</p>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Q: Bisa custom ukuran?</div>
+                <p>A: Tentu! Hubungi kami via WhatsApp untuk pemesanan khusus.</p>
+            </div>
+        </section>
+        
+        <section class="payment-section" style="text-align: center; margin: 40px 0;">
+            <h3>💳 BAYAR DI TEMPAT (COD) / TRANSFER / E-WALLET</h3>
+            <h3>🛡️ 100% Uang Kembali Jika Barang Tidak Sesuai</h3>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <h3>Tambahkan Sentuhan Hangat di Setiap Langkah! 🏡💖</h3>
+            <p>© 2023 Karpet Premium. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
